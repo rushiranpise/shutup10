@@ -13,3 +13,5 @@ wmic desktopmonitor get Name,MonitorType,MonitorManufacturer,DeviceID,DisplayTyp
 wmic bios get BuildNumber,Description,IdentificationCode,Manufacturer,Name,SMBIOSBIOSVersion,SerialNumber >  %UserProfile%\Desktop\check\bios.txt
 
 wmic cpu get Name,Manufacturer,Version,UniqueId,SystemName,ProcessorId,ProcessorType,Revision,MaxClockSpeed,DeviceID,Architecture >  %UserProfile%\Desktop\check\cpu.txt
+
+exit
