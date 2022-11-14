@@ -14,4 +14,6 @@ wmic bios get BuildNumber,Description,IdentificationCode,Manufacturer,Name,SMBIO
 
 wmic cpu get Name,Manufacturer,Version,UniqueId,SystemName,ProcessorId,ProcessorType,Revision,MaxClockSpeed,DeviceID,Architecture >  %UserProfile%\Desktop\check\cpu.txt
 
+powercfg /batteryreport /output "%UserProfile%\Desktop\check\battery-report.html"
+
 exit
