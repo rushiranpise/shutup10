@@ -1,4 +1,4 @@
-md %UserProfile%\Desktop\check
+if not exist "%UserProfile%\Desktop\check" md "%UserProfile%\Desktop\check"
 
 wmic memorychip list full > %UserProfile%\Desktop\check\ram.txt
 
