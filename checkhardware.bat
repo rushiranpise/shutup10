@@ -18,4 +18,6 @@ powercfg /batteryreport /output "%UserProfile%\Desktop\check\battery-report.html
 
 start %UserProfile%\Desktop
 
+start %UserProfile%\Desktop\check\battery-report.html
+
 exit
