@@ -17,4 +17,5 @@ wmic cpu get Name,Manufacturer,Version,UniqueId,SystemName,ProcessorId,Processor
 powercfg /batteryreport /output "%UserProfile%\Desktop\check\battery-report.html"
 
 start %UserProfile%\Desktop
+
 exit
