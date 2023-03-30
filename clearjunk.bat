@@ -1,8 +1,8 @@
-del /s /f /q %USERPROFILE%\Recent\*
+del /f /s /q "%userprofile%\recent\*.*"
 
-del /s /f /q C:\Windows\Prefetch\*
+del /f /s /q %windir%\prefetch\*.*
 
-del /s /f /q C:\Windows\Temp\*
+del /s /f /q %windir%\temp\*
 
 del /s /f /q %USERPROFILE%\appdata\local\temp\*
 
@@ -10,9 +10,20 @@ del /s /f /q %APPDATA%\Microsoft\Windows\Recent\*
 
 ipconfig /flushdns
 cd %homepath%\AppData\Local\Microsoft\Windows\Explorer
-taskkill /IM explorer.exe /F
+
+taskkill /f /im explorer.exe
 del iconcache*
 
 explorer.exe
 
+del %windir%\KB*.log /f /q
+del /f /s /q %systemdrive%\*.tmp
+del /f /s /q %systemdrive%\*._mp
+del /f /s /q %systemdrive%\*.log
+del /f /s /q %systemdrive%\*.gid
+del /f /s /q %systemdrive%\*.chk
+del /f /s /q %systemdrive%\*.old
+del /f /s /q %systemdrive%\recycled\*.*
+del /f /s /q %windir%\*.bak
+del /f /s /q "%userprofile%\local settings\temporary internet files\*.*" 
 exit
